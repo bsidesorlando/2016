@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<base href="https://2016.bsidesorlando.org" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://2016.bsidesorlando.org/xmlrpc.php">
+
+<title>Foundations Talk &#8211; Security B-Sides Orlando 2016 Presented By FC²</title>
+
+<!-- All in One SEO Pack 2.3.11.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<meta name="keywords"  content="foundations talk" />
+
+<link rel="canonical" href="https://2016.bsidesorlando.org/tag/foundations-talk" />
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-45473442-3', 'auto');
+			
+			ga('send', 'pageview');
+			</script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Security B-Sides Orlando 2016 Presented By FC² &raquo; Feed" href="https://2016.bsidesorlando.org/feed" />
+<link rel="alternate" type="application/rss+xml" title="Security B-Sides Orlando 2016 Presented By FC² &raquo; Comments Feed" href="https://2016.bsidesorlando.org/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Security B-Sides Orlando 2016 Presented By FC² &raquo; Foundations Talk Tag Feed" href="https://2016.bsidesorlando.org/tag/foundations-talk/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/bsidesorlando.org\/2016\/wp-includes\/js\/wp-emoji-release.min.js?ver=1f04613caa961d27eb1531f0cec72a5e"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='theme-my-login-css'  href='https://2016.bsidesorlando.org/wp-content/plugins/theme-my-login/theme-my-login.css?ver=6.4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='rocked-bootstrap-css'  href='https://2016.bsidesorlando.org/wp-content/themes/rocked/css/bootstrap/bootstrap.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='rocked-style-css'  href='https://2016.bsidesorlando.org/wp-content/themes/rocked/style.css?ver=1f04613caa961d27eb1531f0cec72a5e' type='text/css' media='all' />
+<style id='rocked-style-inline-css' type='text/css'>
+@media only screen and (min-width: 992px) {.header-image { height:600px; }}
+.roll-testimonials:before,.roll-testimonials .name,.roll-news .entry .title a:hover,.roll-news .entry .meta span a:hover,.roll-progress .perc,.roll-iconbox.style2 .icon,.roll-iconbox.border .icon,.widget.widget-info li:before,.widget-area .widget li a:hover,.post .post-meta a:hover,#mainnav ul li a.active,#mainnav ul li a:hover,a, .social-area a, .post .entry-footer .fa, .post .post-meta .fa, .preloader .preloader-inner { color:#ffa800;}
+.header-text::before,.roll-team .overlay .socials li a,.rocked-toggle .toggle-title.active,.rocked-toggle .toggle-title.active,.roll-progress .animate,.roll-iconbox.border:hover .icon,.roll-iconbox .icon,.roll-button,.owl-theme .owl-controls .owl-page.active span,.work-faetures .box .icon,.widget.widget-tags .tags a:hover,.page-pagination ul li.active,.page-pagination ul li:hover a,.post .post-format,#mainnav ul ul li:hover > a,#mainnav ul li ul:after,button,input[type="button"],input[type="reset"],input[type="submit"],.social-area a:hover { background-color:#ffa800;}
+.roll-iconbox.border .icon,.owl-theme .owl-controls .owl-page.active span,.widget.widget-tags .tags a:hover,.social-area a { border-color:#ffa800;}
+#mainnav ul li ul:before { border-color:transparent transparent #ffa800 transparent;}
+.header { background-color:#ffffff;}
+.site-title a, .site-title a:hover { color:#222}
+.site-description { color:#222}
+#mainnav ul li a { color:#222}
+#mainnav ul ul li a { color:#222}
+.header-text, .header-title { color:#ffffff}
+body { color:#777}
+.footer-widgets.footer { background-color:#2d2d2d}
+.row-overlay { background-color:#1c1c1c}
+.header-image::after { background-color:#000}
+.site-title { font-size:38px; }
+.site-description { font-size:14px; }
+h3, .panel-grid-cell .widget-title { font-size:24px; }
+h4 { font-size:26px; }
+body { font-size:16px; }
+
+</style>
+<link rel='stylesheet' id='rocked-body-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700&#038;ver=1f04613caa961d27eb1531f0cec72a5e' type='text/css' media='all' />
+<link rel='stylesheet' id='rocked-headings-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=1f04613caa961d27eb1531f0cec72a5e' type='text/css' media='all' />
+<link rel='stylesheet' id='rocked-fontawesome-css'  href='https://2016.bsidesorlando.org/wp-content/themes/rocked/fonts/font-awesome.min.css?ver=1f04613caa961d27eb1531f0cec72a5e' type='text/css' media='all' />
+<script type='text/javascript' src='https://2016.bsidesorlando.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://2016.bsidesorlando.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://2016.bsidesorlando.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2016.bsidesorlando.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2016.bsidesorlando.org/wp-includes/wlwmanifest.xml" /> 
+
+<!--[if lt IE 9]>
+<script src="https://2016.bsidesorlando.org/wp-content/themes/rocked/js/html5shiv.js"></script>
+<![endif]-->
+	<style type="text/css">
+		.header-image {
+			background-image: url(https://2016.bsidesorlando.org/wp-content/uploads/2015/12/cropped-background.gif);
+			display: block;
+		}
+	</style>
+	
+<!-- BEGIN GADWP v4.9.5 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-45473442-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- END GADWP Universal Tracking -->
+
+</head>
+
+<body class="archive tag tag-foundations-talk tag-6 fullwidth-single header-static menu-centered group-blog">
+<div class="preloader">
+    <div class="preloader-inner">
+    	    	Loading Oranges…    </div>
+</div>
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="header" class="header">
+		<div class="header-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="site-branding col-md-3 col-sm-3 col-xs-3">
+						<a href="https://2016.bsidesorlando.org/" title="Security B-Sides Orlando 2016 Presented By FC²"><img class="site-logo" src="https://2016.bsidesorlando.org/wp-content/uploads/2016/02/Bsides_Logo_sticker_fc2_final-1.png" alt="Security B-Sides Orlando 2016 Presented By FC²" /></a>					</div><!-- /.col-md-2 -->
+					<div class="menu-wrapper col-md-9 col-sm-9 col-xs-9">
+						<div class="btn-menu"><i class="fa fa-bars"></i></div>
+						<nav id="mainnav" class="mainnav">
+							<div class="menu-main-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-11"><a href="https://2016.bsidesorlando.org/">Home</a></li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-131"><a href="https://2016.bsidesorlando.org/event/activities">Event</a>
+<ul class="sub-menu">
+	<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121"><a href="https://2016.bsidesorlando.org/event/activities">Activities</a></li>
+	<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://2016.bsidesorlando.org/event/call-for-papers">Call For Papers</a></li>
+	<li id="menu-item-124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="https://2016.bsidesorlando.org/event/call-for-workshops">Call For Workshops</a></li>
+</ul>
+</li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-109"><a href="https://2016.bsidesorlando.org/registration/attendee">Registration</a>
+<ul class="sub-menu">
+	<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://2016.bsidesorlando.org/registration/attendee">Attendee</a></li>
+	<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="https://2016.bsidesorlando.org/registration/volunteer">Volunteer</a></li>
+</ul>
+</li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-110"><a href="https://2016.bsidesorlando.org/sponsorship/sponsors">Sponsorship</a>
+<ul class="sub-menu">
+	<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://2016.bsidesorlando.org/sponsorship/apply">Apply</a></li>
+	<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="https://2016.bsidesorlando.org/sponsorship/sponsors">Sponsors</a></li>
+	<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://2016.bsidesorlando.org/sponsorship/value">Value</a></li>
+</ul>
+</li>
+<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-111"><a href="https://2016.bsidesorlando.org/location/venue">Location</a>
+<ul class="sub-menu">
+	<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://2016.bsidesorlando.org/location/eating">Eating</a></li>
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="https://2016.bsidesorlando.org/location/lodging">Lodging</a></li>
+	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://2016.bsidesorlando.org/location/parking">Parking</a></li>
+	<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://2016.bsidesorlando.org/location/venue">Venue</a></li>
+</ul>
+</li>
+<li id="menu-item-178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-178"><a href="https://2016.bsidesorlando.org/schedule/talks">Schedule</a>
+<ul class="sub-menu">
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://2016.bsidesorlando.org/schedule/floor-map">Floor Map</a></li>
+	<li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201"><a href="https://2016.bsidesorlando.org/schedule/talks">Talks</a></li>
+	<li id="menu-item-197" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-197"><a href="https://2016.bsidesorlando.org/category/speakers">Speakers</a></li>
+	<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="https://2016.bsidesorlando.org/schedule/workshops">Workshops</a></li>
+</ul>
+</li>
+<li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-130"><a href="https://2016.bsidesorlando.org/about/goals">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="https://2016.bsidesorlando.org/about/goals">Goals</a></li>
+	<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="https://2016.bsidesorlando.org/about/history">History</a></li>
+	<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="https://2016.bsidesorlando.org/about/target">Target</a></li>
+	<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://2016.bsidesorlando.org/about/team">Team</a></li>
+</ul>
+</li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://2016.bsidesorlando.org/contact">Contact</a></li>
+</ul></div>						</nav><!-- #site-navigation -->
+					</div><!-- /.col-md-10 -->
+				</div><!-- /.row -->
+			</div><!-- /container -->
+		</div>
+	</header>
+	
+	
+	<div class="main-content">
+		<div class="container">
+			<div class="row">
+	<div id="primary" class="content-area col-md-9 fullwidth">
+		<main id="main" class="content-wrap" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">Tag: Foundations Talk</h1>			</header><!-- .page-header -->
+
+						<div class="posts-layout">
+			
+				
+<article id="post-351" class="post-351 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/adam-losey-data-privacy-legal-alphabet-soup" rel="bookmark">Adam Losey | Data Privacy: Legal Alphabet Soup</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/adam-losey-data-privacy-legal-alphabet-soup" rel="bookmark"><time class="entry-date published" datetime="2016-02-12T12:00:40+00:00">February 12, 2016</time><time class="updated" datetime="2016-02-12T14:41:54+00:00">February 12, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/jtoth">jtoth</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-346" class="post-346 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/dodi-glenn-history-of-ransomware" rel="bookmark">Dodi Glenn | History of Ransomware</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/dodi-glenn-history-of-ransomware" rel="bookmark"><time class="entry-date published" datetime="2016-02-12T11:49:13+00:00">February 12, 2016</time><time class="updated" datetime="2016-02-12T14:37:10+00:00">February 12, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/jtoth">jtoth</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-336" class="post-336 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/david-switzer-wifi-tracking-collecting-the-probe-breadcrumbs" rel="bookmark">David Switzer | Wifi Tracking: Collecting the (probe) Breadcrumbs</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/david-switzer-wifi-tracking-collecting-the-probe-breadcrumbs" rel="bookmark"><time class="entry-date published" datetime="2016-02-12T11:43:26+00:00">February 12, 2016</time><time class="updated" datetime="2016-02-17T14:16:34+00:00">February 17, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/jtoth">jtoth</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-331" class="post-331 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/emori-medeiros-resume-building-for-security-professionals" rel="bookmark">Emori Medeiros | Resume Building for Security Professionals</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/emori-medeiros-resume-building-for-security-professionals" rel="bookmark"><time class="entry-date published" datetime="2016-02-12T11:40:21+00:00">February 12, 2016</time><time class="updated" datetime="2016-02-19T12:45:19+00:00">February 19, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/jtoth">jtoth</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-264" class="post-264 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/sk4ld-simulated-physics-and-embedded-virtualization-integration" rel="bookmark">sk4ld |  Simulated Physics And Embedded Virtualization Integration</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/sk4ld-simulated-physics-and-embedded-virtualization-integration" rel="bookmark"><time class="entry-date published" datetime="2016-02-12T11:07:29+00:00">February 12, 2016</time><time class="updated" datetime="2016-02-12T14:36:24+00:00">February 12, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/mfelch">mfelch</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-286" class="post-286 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/mitch-stoltz-jailbreaks-and-pirate-tractors-reverse-engineering-dos-and-donts" rel="bookmark">Mitch Stoltz | Jailbreaks and Pirate Tractors: Reverse Engineering Do’s and Don’ts</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/mitch-stoltz-jailbreaks-and-pirate-tractors-reverse-engineering-dos-and-donts" rel="bookmark"><time class="entry-date published updated" datetime="2016-02-08T17:51:52+00:00">February 8, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/mfelch">mfelch</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-284" class="post-284 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/jason-blanchard-how-to-social-engineer-your-way-into-your-dream-job" rel="bookmark">Jason Blanchard | How to Social Engineer your way into your dream job</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/jason-blanchard-how-to-social-engineer-your-way-into-your-dream-job" rel="bookmark"><time class="entry-date published" datetime="2016-02-08T17:32:26+00:00">February 8, 2016</time><time class="updated" datetime="2016-02-08T17:32:55+00:00">February 8, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/mfelch">mfelch</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-259" class="post-259 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/samuel-greenfeld-dox-yourself" rel="bookmark">Samuel Greenfeld | Dox Yourself</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/samuel-greenfeld-dox-yourself" rel="bookmark"><time class="entry-date published updated" datetime="2016-01-26T10:51:10+00:00">January 26, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/mfelch">mfelch</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-232" class="post-232 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/paul-arnold-the-wizarding-world-of-selinux" rel="bookmark">Paul Arnold | The Wizarding World of SELinux</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/paul-arnold-the-wizarding-world-of-selinux" rel="bookmark"><time class="entry-date published updated" datetime="2016-01-19T10:34:53+00:00">January 19, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/mfelch">mfelch</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+			
+				
+<article id="post-181" class="post-181 post type-post status-publish format-quote hentry category-speakers tag-foundations-talk post_format-post-format-quote">
+
+	<div class="post-format">
+		<i class="fa fa-quote-left"></i>	</div><!-- /.post-format -->
+
+	<div class="post-content">
+		
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://2016.bsidesorlando.org/ean-meyer-dress-for-the-job-you-want-to-fake-not-the-one-you-have" rel="bookmark">Ean Meyer | Dress for the Job You Want (to fake) not the One You Have</a></h2>
+						<div class="post-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i><a href="https://2016.bsidesorlando.org/ean-meyer-dress-for-the-job-you-want-to-fake-not-the-one-you-have" rel="bookmark"><time class="entry-date published" datetime="2016-01-07T11:15:17+00:00">January 7, 2016</time><time class="updated" datetime="2016-01-14T10:17:51+00:00">January 14, 2016</time></a></span><span class="byline"><i class="fa fa-user"></i><span class="author vcard"><a class="url fn n" href="https://2016.bsidesorlando.org/author/mfelch">mfelch</a></span></span>			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<div class="entry-content">
+										
+					</div><!-- .entry-content -->
+
+	</div>
+</article><!-- #post-## -->
+						</div>
+
+			
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+			</div>
+		</div>
+	</div>
+
+			
+	
+	<div id="sidebar-footer" class="footer-widgets footer" role="complementary">
+		<div class="container">
+							<div class="sidebar-column col-md-12">
+					<aside id="fp_social-3" class="widget widget_fp_social">					<div class="social-area">
+				<div class="menu-social-media-container"><ul id="menu-social-media" class="menu social-menu-widget clearfix"><li id="menu-item-146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><a href="https://www.facebook.com/BsidesORL"><span class="screen-reader-text">Facebook</span></a></li>
+<li id="menu-item-145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145"><a href="https://twitter.com/bsidesorl"><span class="screen-reader-text">Twitter</span></a></li>
+<li id="menu-item-172" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-172"><a href="https://www.youtube.com/user/bsidesorl/videos"><span class="screen-reader-text">YouTube</span></a></li>
+</ul></div>	
+			</div>
+		</aside>				</div>
+				
+				
+					</div>	
+	</div>	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info container">
+			<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: <a href="http://athemes.com/theme/rocked">Rocked</a> by aThemes.			<span class="sep"> | </span>
+			Designed by: <a href="mailto:jsinger@bsidesorlando.org" rel="designer">Jonathan Singer</a>		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+<a class="go-top">
+	<i class="fa fa-angle-up"></i>
+</a>
+
+<script type='text/javascript' src='https://2016.bsidesorlando.org/wp-content/themes/rocked/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='https://2016.bsidesorlando.org/wp-content/themes/rocked/js/scripts.js?ver=1f04613caa961d27eb1531f0cec72a5e'></script>
+<script type='text/javascript' src='https://2016.bsidesorlando.org/wp-content/themes/rocked/js/main.min.js?ver=1f04613caa961d27eb1531f0cec72a5e'></script>
+<script type='text/javascript' src='https://2016.bsidesorlando.org/wp-includes/js/wp-embed.min.js?ver=1f04613caa961d27eb1531f0cec72a5e'></script>
+
+</body>
+</html>
